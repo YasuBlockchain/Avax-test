@@ -59,12 +59,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "owner",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -107,7 +107,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "account",
 						"type": "address"
 					}
 				],
@@ -117,71 +117,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "burn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "decimals",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -261,7 +196,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"erc20/ERC20.sol": "ERC20"
+			"erc20/IERC20.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -275,14 +210,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"erc20/ERC20.sol": {
-			"keccak256": "0x667722961bd20fb87a2c55cf7ac8b8373e757dc01f81e81882777706693b537c",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://78517c54c3857415d713e6a12dc0f4119ef6cfb0324dc564fefa50c6333498b0",
-				"dweb:/ipfs/QmSXAvWZTcCZKdAWDffb6MMGno7nPWMJoCTuiN8iMaUh8B"
-			]
-		},
 		"erc20/IERC20.sol": {
 			"keccak256": "0xc36d3967c1d403242c8f49a438c98b55aac9a8b06542ee88057c304c6063b5d0",
 			"license": "MIT",

@@ -10,12 +10,12 @@ contract ERC20 is IERC20 {
     string public name = "POLKACAT";
     string public symbol = "PLKT";
     uint8 public decimals = 18;
+    string hola = "hola";
 
-    function transfer(address recipient, uint amount) external returns (bool) {
+    function transfera(address recipient, uint amount) external {
         balanceOf[msg.sender] -= amount;
         balanceOf[recipient] += amount;
         emit Transfer(msg.sender, recipient, amount);
-        return true;
     }
 
     function approve(address spender, uint amount) external returns (bool) {
@@ -46,5 +46,5 @@ contract ERC20 is IERC20 {
         balanceOf[msg.sender] -= amount;
         totalSupply -= amount;
         emit Transfer(msg.sender, address(0), amount);
-    }
+    } 
 }
